@@ -1,0 +1,89 @@
+html * {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 20pt;
+}
+
+ul {
+    font-family: 'Zilla Slab Highlight', regular;
+}
+
+p1 {
+    font-family: 'Zilla Slab Highlight', bold;
+}
+
+/* unvisited link */
+
+a:link {
+    font-family: 'Zilla Slab Highlight', bold;
+    color: #008ea4;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+/* visited link */
+
+a:visited {
+    color: #005a71;
+}
+
+/* mouse over link */
+
+a:hover {
+    color: #00c8d7;
+}
+
+/* selected link */
+
+a:active {
+    color: yellow;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: darkblue;
+    color: white;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header li {
+    float: left;
+}
+
+header li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 10pt 10pt 10pt 10pt
+}
+
+header li a:hover {
+    background-color: white;
+    color: darkblue;
+}
+
+header .active {
+    background-color: blue;
+}
+
+main {
+    top: 100pt;
+    padding: 20pt 0pt 0pt 0pt;
+}
+
+figure {
+    text-align: center;
+    display: inline-block;
+}
+
+figure figcaption {
+    vertical-align: top;
+}
