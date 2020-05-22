@@ -16,23 +16,29 @@
   <link rel="stylesheet" href="../css_home.css">
   <style>
     #map {
-      height: 700px;
-      margin: auto;
-      width: 700px;
+      height: 800px;
+      width: 800px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
-
-    /* Optional: Makes the sample page fill the window. */
-    html,
-    body {
+    html, body {
       height: 100%;
       margin: 0;
       padding: 0;
     }
+
   </style>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-  hello!
   <div id="map"></div>
   <script>
     function initMap() {
@@ -248,9 +254,9 @@
             // size: new google.maps.Size(22, 40),
             origin: new google.maps.Point(0, 0),
           },
-          label:{
+          label: {
             color: '#ED6E1C',
-            // fontFamily: 'Raleway',
+            fontFamily: 'Source Sans Pro',
             fontSize: '23.5px',
             text: inputs.content,
           }
@@ -266,10 +272,10 @@
         // infowindow.open(map,marker);
       }
 
-      addMarker({ coords: { lat: 41.316319, lng: -72.929344 }, content: "Dixwell", x: -20, y:-12 });
-      addMarker({ coords: { lat: 41.315972, lng: -72.928726 }, content: "Ashmun", x: 75, y:-10 });
-      addMarker({ coords: { lat: 41.323898, lng: -72.927669 }, content: "Science Park", x: 25, y:-10  });
-      addMarker({ coords: { lat: 41.320358, lng: -72.906979 }, content: "Willow", x: 25, y:-10  });
+      addMarker({ coords: { lat: 41.316319, lng: -72.929344 }, content: "Dixwell", x: -12, y: -12 });
+      addMarker({ coords: { lat: 41.315972, lng: -72.928726 }, content: "Ashmun", x: 75, y: -10 });
+      addMarker({ coords: { lat: 41.323898, lng: -72.927669 }, content: "Science Park", x: 25, y: -10 });
+      addMarker({ coords: { lat: 41.320358, lng: -72.906979 }, content: "Willow", x: 25, y: -10 });
     }
   </script>
 
