@@ -210,39 +210,7 @@
       }
       var map = new google.maps.Map(document.getElementById('map'), settings);
 
-      var location_icon = 'map-pin2.svg';
-
-
-      // var dixwell = new google.maps.Marker({
-      //     position: {lat: 41.316319, lng:  -72.929344},
-      //     map: map,
-      //     icon: location_icon
-      // });
-
-
-      // var infoWindow_dixwell = new google.maps.Infowindow({
-      //     content: '<h1>45 Dixwell Street</h1>'
-      // })
-
-      // dixwell.addListener('click',function(){
-      //   infoWindow.open(map, marker);
-      // })
-
-
-      // var ashmun = new google.maps.Marker({
-      //     position: {lat: 41.315972, lng: -72.928726},
-      //     map: map,
-      // });
-
-      // var science_park = new google.maps.Marker({
-      //     position: {lat: 41.323898, lng: -72.927669},
-      //     map: map,
-      // });
-
-      // var willow = new google.maps.Marker({
-      //     position: {lat: 41.320358, lng:-72.906979 },
-      //     map: map,
-      // });
+      var location_icon = 'map-pin-blue.svg';
 
       function addMarker(inputs) {
         var marker = new google.maps.Marker({
@@ -261,6 +229,7 @@
             text: inputs.content,
           }
         });
+        // Code to enable infowindows
         // var infoWindow = new google.maps.InfoWindow({
         //   content: inputs.content,
         //   map: map,
@@ -272,10 +241,10 @@
         // infowindow.open(map,marker);
       }
 
-      addMarker({ coords: { lat: 41.316319, lng: -72.929344 }, content: "Dixwell", x: -12, y: -12 });
-      addMarker({ coords: { lat: 41.315972, lng: -72.928726 }, content: "Ashmun", x: 75, y: -10 });
+      addMarker({ coords: { lat: 41.316319, lng: -72.929344 }, content: "Bristol", x: -12, y: -12 });
+      addMarker({ coords: { lat: 41.315972, lng: -72.928726 }, content: "Dixwell", x: 75, y: -10 });
       addMarker({ coords: { lat: 41.323898, lng: -72.927669 }, content: "Science Park", x: 25, y: -10 });
-      addMarker({ coords: { lat: 41.320358, lng: -72.906979 }, content: "Willow", x: 25, y: -10 });
+      addMarker({ coords: { lat: 41.320358, lng: -72.906979 }, content: "Willow Street", x: 25, y: -10 });
     }
   </script>
 
