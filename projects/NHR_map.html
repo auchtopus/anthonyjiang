@@ -210,7 +210,7 @@
       }
       var map = new google.maps.Map(document.getElementById('map'), settings);
 
-      var location_icon = 'map-pin-blue.svg';
+      var location_icon = 'map-pin2.svg';
 
       function addMarker(inputs) {
         var marker = new google.maps.Marker({
@@ -223,7 +223,7 @@
             origin: new google.maps.Point(0, 0),
           },
           label: {
-            color: '#ED6E1C',
+            color: '#3291CF',
             fontFamily: 'Source Sans Pro',
             fontSize: '23.5px',
             text: inputs.content,
@@ -240,7 +240,7 @@
         // });
         // infowindow.open(map,marker);
       }
-
+      addMarker({ coords: { lat: 41.316319, lng: -72.929344 }, content: "Bristol", x: -12, y: -12 });
       addMarker({ coords: { lat: 41.316319, lng: -72.929344 }, content: "Bristol", x: -12, y: -12 });
       addMarker({ coords: { lat: 41.315972, lng: -72.928726 }, content: "Dixwell", x: 75, y: -10 });
       addMarker({ coords: { lat: 41.323898, lng: -72.927669 }, content: "Science Park", x: 25, y: -10 });
