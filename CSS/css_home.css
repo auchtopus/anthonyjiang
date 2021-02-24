@@ -7,16 +7,24 @@ header {
     padding-bottom: 20pt;
 }
 
+body {
+    zoom: 125%;
+}
+
 main {
     top: 100pt;
-    padding: 20pt 0pt 0pt 0pt; 
+    padding: 20pt 0pt 0pt 0pt;
 }
-  
+
 figure {
     text-align: center;
     display: inline-block;
 }
 
-figure figcaption{
+figure figcaption {
     vertical-align: top;
+}
+
+p1 b {
+    color: ;
 }
