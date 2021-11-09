@@ -11,6 +11,15 @@ body {
     zoom: 125%;
 }
 
+.fade-effect{
+    transition: color 0.5s;
+    color:#000000;
+  }
+.fade-effect:hover{
+color:#001a33;
+}
+
+
 main {
     top: 100pt;
     padding: 20pt 0pt 0pt 0pt;
